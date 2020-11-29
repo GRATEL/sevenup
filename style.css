@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sec{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: spacebetween;
+    align-items: center;
+    background: #006942;
+    transition: 0.45s;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 50px;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox
+{
+    position: relative;
+    max-width: 600px;
+}
+.textbox h2{
+    color: #ffffff;
+    font-size: 4em;
+    line-height: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+.content .textbox p{
+    color: #ffffff;
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.imgbox{
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.imgbox img{
+    max-width: 260px;
+}
+.swap{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.swap li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    cursor: pointer;
+    transition: 0.55s;
+}
+.swap li:hover{
+    transform: translateY(-20px);
+}
+.swap li img{
+    max-width: 40px;
+}
+@media screen and (max-width:768px){
+    .swap{
+        margin: 0 3px;
+        position: absolute;
+        bottom: 2px;
+        left: 400px;
+        width: 100vw;
+    }
+    .swap li img{
+        max-width: 17px;
+    }
+}
