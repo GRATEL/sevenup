@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assest/style.css">
+</head>
+<body>
+   <section class="sec">
+        <header>
+            <a href=""><img src="./assest/7-up_Logo.svg.png" alt="" class="logo" width="100px"></a>
+            <ul class="textColor">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2 class="xcolor"> Get inspired to mix it up a little with <br><span id="txt-bg">7UP! </span> </h2><br>
+                <p class="xcolr">Crisp and refreshing, it mixes into all kinds of drinks, cocktails, punches, baked goods, and more, perfect for your next ...</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img  src="7up.webp" alt="7up"class="sss">
+            </div>
+        </div>
+        <div class="swap">
+            <ul>
+                <li><img src="7up.webp" onclick="imgSlider('7up.webp');changeBgColor('#006942');changeTextColor('#ffffff');changePcolor('#ffffff')" alt=""></li>
+                <li><img src="7up_diet.webp" onclick="imgSlider('7up_diet.webp');changeBgColor('#8eaa5d');changeTextColor('#006942');changePcolor('#ffffff')" alt=""></li>
+                <li><img src="7up_diet_cherry.webp" alt="" onclick="imgSlider('7up_diet_cherry.webp');changeBgColor('#df7563');changeTextColor('#ff0000');changePcolor('#ffffff')"></li>
+                <li><img src="7up_cherry.webp" alt=""onclick="imgSlider('7up_cherry.webp');changeBgColor('#b01929');changeTextColor('#ffffff');changePcolor('#ffffff')"></li>
+            </ul>
+        </div>
+   </section>
+   <script type="text/javascript">
+    function imgSlider(change){
+        document.querySelector('.sss').src = change;
+    }
+    function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+    function changeTextColor(tcolor){
+        const xcolor = document.querySelector(".xcolor");
+        xcolor.style.color = tcolor;
+    }
+    function  changePcolor(pColor){
+        const xcolr = document.querySelector('.xcolr');
+        xcolr.style.color = pColor;
+    }
+   </script>
+</body>
+</html>
